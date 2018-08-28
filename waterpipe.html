@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style>
+
+	#whit{
+		position:relative;
+		background:white;
+		top:42px;
+		left:62px;
+		height:0px;
+		width:250px;
+		border:1px solid black;
+		display:none;
+		border-top-right-radius:20px;
+		border-top-left-radius:20px;
+	}
+	#blu{
+		background:aqua;
+		border:1px solid black;
+		position:absolute;
+		top:50px;
+		left:70px;
+		height:300px;
+		width:250px;
+		border-top-right-radius:20px;
+		border-top-left-radius:20px;
+	}
+	#switch{
+		position:fixed;
+		top:305px;
+		left:370px;
+		background-color:blue;
+	}
+	#pipe{
+		position:fixed;
+		border:2px solid black;
+		height:5px;
+		width: 50px;
+		top:315px;
+		left:322px;
+	}
+	#val{
+		position:fixed;
+		height:15px;
+		width: 5px;
+		border:2px solid black;
+		top:310px;
+		left:374px;
+	}
+	#water{
+		position:fixed;
+		height:75px;
+		width: 7px;
+		top:329px;
+		left:375px;
+	}
+</style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js">
+	</script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("#switch").click(function(){
+				if($("#switch").css("background-color")=="rgb(0, 0, 255)")
+				{
+				$("#whit").css("display","block");
+				$("#switch").css("background-color","green");
+				$("#water").css("display","block");
+				$("#water").css("background","aqua");
+				$("#whit").animate({
+					height:"272px"
+				},3000,function(){
+					$("#water").css("display","none");	
+				});
+			}
+			else{
+				$("#switch").css("background-color","blue");
+				$("#whit").stop();
+				$("#water").css("display","none");
+			}
+			});
+		});
+	</script>
+</head>
+<body>
+	<div id="blu"></div>
+	<div id="whit"></div>
+	<button id="switch"></button>
+	<div id="pipe"></div>
+	<div id="val"></div>
+	<div id="water"></div>
+</body>
+</html>
