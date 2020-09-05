@@ -1,0 +1,316 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+        #border{
+            width:305px;
+            height:305px;
+            border-radius:20px;
+            }
+        #p1,#p2,#p3,#p4,#p5,#p6,#p7,#p8,#p9{
+                 background:#46C3F3;
+            }
+            td{
+            height:80px;
+            width:80px;
+            border-radius:15px;
+            padding: 40px; 
+           }
+           h5{
+            font-size:30px;
+           }
+           @media screen and (max-width:800px) {
+            td{
+            height:80px;
+            width:80px;
+            border-radius:15px;
+            padding: 40px; 
+           }
+           }
+        </style>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js">
+</script>
+<script>
+
+            $(document).ready(function(){
+                var n=0;
+                var n1=0;
+                $("#p1").click(function(){
+                    if($("#21").text()!="")
+                    {
+                    var l1=$("#21").text();
+                    if($("#22").text()=="")
+                    {
+                        $("#22").html(l1);
+                        $("#21").html("");
+                    }
+                    if($("#24").text()=="")
+                    {
+                        $("#24").html(l1);
+                        $("#21").html("");
+                    }
+                     n++;
+                     $("#co").html(n);
+                }
+                if(($("#21").text()=="1")&&($("#22").text()=="2")&&($("#23").text()=="3")&&($("#24").text()=="4")&&($("#25").text()=="5")&&($("#26").text()=="6")&&($("#27").text()=="7")&&($("#28").text()=="8")&&($("#29").text()==""))
+                  {
+                    $("#win").html("Wow,You Won This Puzzle");
+
+                  }
+                });
+                $("#p2").click(function(){
+                    if($("#22").text()!="")
+                    {
+                    var l2=$("#22").text();
+                    if($("#21").text()=="")
+                    {
+                        $("#21").html(l2);
+                        $("#22").html("");
+                    }
+                    if($("#23").text()=="")
+                    {
+                        $("#23").html(l2);
+                        $("#22").html("");
+                    }
+                    if($("#25").text()=="")
+                    {
+                        $("#25").html(l2);
+                        $("#22").html("");
+                    }
+                    n++;
+                     $("#co").html(n);
+                 }
+                 if(($("#21").text()=="1")&&($("#22").text()=="2")&&($("#23").text()=="3")&&($("#24").text()=="4")&&($("#25").text()=="5")&&($("#26").text()=="6")&&($("#27").text()=="7")&&($("#28").text()=="8")&&($("#29").text()==""))
+                  {
+                    $("#win").html("Wow,You Won This Puzzle");
+
+                  }
+                });
+                $("#p3").click(function(){
+                    if($("#23").text()!="")
+                    {
+                    var l3=$("#23").text();
+                    if($("#22").text()=="")
+                    {
+                        $("#22").html(l3);
+                        $("#23").html("");
+                    }
+                    if($("#26").text()=="")
+                    {
+                        $("#26").html(l3);
+                        $("#23").html("");
+                    }
+                    n++;
+                     $("#co").html(n);
+                 }
+                 if(($("#21").text()=="1")&&($("#22").text()=="2")&&($("#23").text()=="3")&&($("#24").text()=="4")&&($("#25").text()=="5")&&($("#26").text()=="6")&&($("#27").text()=="7")&&($("#28").text()=="8")&&($("#29").text()==""))
+                  {
+                    $("#win").html("Wow,You Won This Puzzle");
+
+                  }
+                });
+                
+                $("#p4").click(function(){
+                  
+                  if($("#24").text()!="")
+                    {
+                      var l4=$("#24").text();
+                    if($("#21").text()=="")
+                    {
+                        $("#21").html(l4);
+                        $("#24").html("");
+                    }
+                    if($("#25").text()=="")
+                    {
+                        $("#25").html(l4);
+                        $("#24").html("");
+                    }
+                    if($("#27").text()=="")
+                    {
+                        $("#27").html(l4);
+                        $("#24").html("");
+                    }
+                    n++;
+                     $("#co").html(n);
+                 }
+                 if(($("#21").text()=="1")&&($("#22").text()=="2")&&($("#23").text()=="3")&&($("#24").text()=="4")&&($("#25").text()=="5")&&($("#26").text()=="6")&&($("#27").text()=="7")&&($("#28").text()=="8")&&($("#29").text()==""))
+                  {
+                    $("#win").html("Wow,You Won This Puzzle");
+
+                  }
+                });
+                $("#p5").click(function(){
+                  
+                  if($("#25").text()!="")
+                    {
+                      var l5=$("#25").text();
+                    if($("#22").text()=="")
+                    {
+                        $("#22").html(l5);
+                        $("#25").html("");
+                    }
+                    if($("#24").text()=="")
+                    {
+                        $("#24").html(l5);
+                        $("#25").html("");
+                    }
+                    if($("#26").text()=="")
+                    {
+                        $("#26").html(l5);
+                        $("#25").html("");
+                    }
+                    if($("#28").text()=="")
+                    {
+                        $("#28").html(l5);
+                        $("#25").html("");
+                    }
+                    n++;
+                     $("#co").html(n);
+                 }
+                 if(($("#21").text()=="1")&&($("#22").text()=="2")&&($("#23").text()=="3")&&($("#24").text()=="4")&&($("#25").text()=="5")&&($("#26").text()=="6")&&($("#27").text()=="7")&&($("#28").text()=="8")&&($("#29").text()==""))
+                  {
+                    $("#win").html("Wow,You Won This Puzzle");
+
+                  }
+                });
+                $("#p6").click(function(){
+                   if($("#26").text()!="")
+                    {
+                    
+                    var l6=$("#26").text();
+                    if($("#23").text()=="")
+                    {
+                        $("#23").html(l6);
+                        $("#26").html("");
+                    }
+                    if($("#25").text()=="")
+                    {
+                        $("#25").html(l6);
+                        $("#26").html("");
+                    }
+                    if($("#29").text()=="")
+                    {
+                        $("#29").html(l6);
+                        $("#26").html("");
+                    }
+                    n++;
+                     $("#co").html(n);
+                 }
+                 if(($("#21").text()=="1")&&($("#22").text()=="2")&&($("#23").text()=="3")&&($("#24").text()=="4")&&($("#25").text()=="5")&&($("#26").text()=="6")&&($("#27").text()=="7")&&($("#28").text()=="8")&&($("#29").text()==""))
+                  {
+                    $("#win").html("Wow,You Won This Puzzle");
+
+                  }
+                });
+                 $("#p7").click(function(){
+                   
+                   if($("#27").text()!="")
+                    {
+                     var l7=$("#27").text();
+                    if($("#24").text()=="")
+                    {
+                        $("#24").html(l7);
+                        $("#27").html("");
+                    }
+                    if($("#28").text()=="")
+                    {
+                        $("#28").html(l7);
+                        $("#27").html("");
+                    }
+                    n++;
+                     $("#co").html(n);
+                    }
+                    if(($("#21").text()=="1")&&($("#22").text()=="2")&&($("#23").text()=="3")&&($("#24").text()=="4")&&($("#25").text()=="5")&&($("#26").text()=="6")&&($("#27").text()=="7")&&($("#28").text()=="8")&&($("#29").text()==""))
+                  {
+                    $("#win").html("Wow,You Won This Puzzle");
+
+                  }
+                });
+                 $("#p8").click(function(){
+                    
+                    if($("#28").text()!="")
+                    {
+                    var l8=$("#28").text();
+                    if($("#27").text()=="")
+                    {
+                        $("#27").html(l8);
+                        $("#28").html("");
+                    }
+                    if($("#25").text()=="")
+                    {
+                        $("#25").html(l8);
+                        $("#28").html("");
+                    }
+                    if($("#29").text()=="")
+                    {
+                        $("#29").html(l8);
+                        $("#28").html("");
+                    }
+                    n++;
+                     $("#co").html(n);
+                 }
+                 if(($("#21").text()=="1")&&($("#22").text()=="2")&&($("#23").text()=="3")&&($("#24").text()=="4")&&($("#25").text()=="5")&&($("#26").text()=="6")&&($("#27").text()=="7")&&($("#28").text()=="8")&&($("#29").text()==""))
+                  {
+                    $("#win").html("Wow,You Won This Puzzle");
+
+                  }
+                });
+                 $("#p9").click(function(){
+                  if($("#29").text()!="")
+                    {
+                      var l9=$("#29").text();
+                    if($("#28").text()=="")
+                    {
+                        $("#28").html(l9);
+                        $("#29").html("");
+                    }
+                    if($("#26").text()=="")
+                    {
+                        $("#26").html(l9);
+                        $("#29").html("");
+                    }
+                    n++;
+                     $("#co").html(n);
+                 }
+                 if(($("#21").text()=="1")&&($("#22").text()=="2")&&($("#23").text()=="3")&&($("#24").text()=="4")&&($("#25").text()=="5")&&($("#26").text()=="6")&&($("#27").text()=="7")&&($("#28").text()=="8")&&($("#29").text()==""))
+                  {
+                    $("#win").html("Wow,You Won This Puzzle");
+
+                  }
+                });
+                 if(($("#21").text()=="1")&&($("#22").text()=="2")&&($("#23").text()=="3")&&($("#24").text()=="4")&&($("#25").text()=="5")&&($("#26").text()=="6")&&($("#27").text()=="7")&&($("#28").text()=="8")&&($("#29").text()==""))
+                  {
+                    $("#win").html("Wow,You Won This Puzzle");
+
+                  }
+
+            });
+        </script>
+    </head>
+    <body><center>
+        <h5>Arrange The Numbers In Sequential Order</h5>
+        <h5>Your moves count:<p id="co">0</p></h5>
+        <table id="border">
+            <tr>
+        <td id="p1"><p id="21">1</p></td>
+        <td id="p2"><p id="22">2</p></td>
+        <td id="p3"><p id="23">3</p></td></tr>
+        
+        <tr>
+        <td id="p4"><p id="24"></p></td>
+        <td id="p5"><p id="25">5</p></td>
+        <td id="p6"><p id="26">6</p></td>
+        </tr>
+        
+        <tr>
+        <td id="p7"><p id="27">7</p></td>
+        <td id="p8"><p id="28">8</p></td>
+        <td id="p9"><p id="29">4</p></td>
+        </tr>
+        </table>
+        <h5><p id="win"></p></h5>
+
+    </center>
+
+    </body>
+</html>
